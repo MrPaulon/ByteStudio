@@ -83,7 +83,6 @@ useSeoMeta({
     <ULandingSection
       :headline="page.testimonials.headline"
       :title="page.testimonials.title"
-      :description="page.testimonials.description"
     >
       <UPageColumns class="xl:columns-4">
         <div

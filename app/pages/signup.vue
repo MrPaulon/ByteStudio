@@ -11,23 +11,23 @@ const fields = [{
   name: 'name',
   type: 'text',
   label: 'Name',
-  placeholder: 'Enter your name'
+  placeholder: 'Entrez votre nom'
 }, {
   name: 'email',
   type: 'email',
   label: 'Email',
-  placeholder: 'Enter your email'
+  placeholder: 'Entrez votre email'
 }, {
   name: 'password',
   label: 'Password',
   type: 'password',
-  placeholder: 'Enter your password'
+  placeholder: 'Entrez votre mot de passe'
 }]
 
 const validate = (state: any) => {
   const errors = []
-  if (!state.email) errors.push({ path: 'email', message: 'Email is required' })
-  if (!state.password) errors.push({ path: 'password', message: 'Password is required' })
+  if (!state.email) errors.push({ path: 'email', message: 'Email est requis' })
+  if (!state.password) errors.push({ path: 'password', message: 'Mot de passe est requis' })
   return errors
 }
 
@@ -36,7 +36,7 @@ const providers = [{
   icon: 'i-simple-icons-github',
   color: 'gray' as const,
   click: () => {
-    console.log('Redirect to GitHub')
+    console.log('Rediriger vers GitHub')
   }
 }]
 
@@ -54,23 +54,24 @@ function onSubmit(data: any) {
       :validate="validate"
       :providers="providers"
       align="top"
-      title="Create an account"
+      title="Créer un compte"
       :ui="{ base: 'text-center', footer: 'text-center' }"
-      :submit-button="{ label: 'Create account' }"
+      :submit-button="{ label: 'S\'inscrire' }"
       @submit="onSubmit"
     >
       <template #description>
-        Already have an account? <NuxtLink
+        Vous avez déjà un compte ? <NuxtLink
           to="/login"
           class="text-primary font-medium"
-        >Login</NuxtLink>.
+        >Se connecter</NuxtLink>.
       </template>
 
+
       <template #footer>
-        By signing up, you agree to our <NuxtLink
+        En vous inscrivant, vous acceptez nos <NuxtLink
           to="/"
           class="text-primary font-medium"
-        >Terms of Service</NuxtLink>.
+        >Conditions d'utilisation</NuxtLink>.
       </template>
     </UAuthForm>
   </UCard>

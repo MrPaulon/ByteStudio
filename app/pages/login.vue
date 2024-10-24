@@ -4,25 +4,25 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Login'
+  title: 'Connexion'
 })
 
 const fields = [{
   name: 'email',
   type: 'email',
   label: 'Email',
-  placeholder: 'Enter your email'
+  placeholder: 'Entrez votre email'
 }, {
   name: 'password',
   label: 'Password',
   type: 'password',
-  placeholder: 'Enter your password'
+  placeholder: 'Entrez votre mot de passe'
 }]
 
 const validate = (state: any) => {
   const errors = []
-  if (!state.email) errors.push({ path: 'email', message: 'Email is required' })
-  if (!state.password) errors.push({ path: 'password', message: 'Password is required' })
+  if (!state.email) errors.push({ path: 'email', message: 'Email est requis' })
+  if (!state.password) errors.push({ path: 'password', message: 'Mot de passe est requis' })
   return errors
 }
 
@@ -31,7 +31,7 @@ const providers = [{
   icon: 'i-simple-icons-github',
   color: 'white' as const,
   click: () => {
-    console.log('Redirect to GitHub')
+    console.log('Rediriger vers GitHub')
   }
 }]
 
@@ -48,7 +48,7 @@ function onSubmit(data: any) {
       :fields="fields"
       :validate="validate"
       :providers="providers"
-      title="Welcome back"
+      title="Bienvenue"
       align="top"
       icon="i-heroicons-lock-closed"
       :ui="{ base: 'text-center', footer: 'text-center' }"
@@ -56,24 +56,24 @@ function onSubmit(data: any) {
       @submit="onSubmit"
     >
       <template #description>
-        Don't have an account? <NuxtLink
+        Vous n'avez pas de compte ? <NuxtLink
           to="/signup"
           class="text-primary font-medium"
-        >Sign up</NuxtLink>.
+        >S'inscrire</NuxtLink>.
       </template>
 
       <template #password-hint>
         <NuxtLink
           to="/"
           class="text-primary font-medium"
-        >Forgot password?</NuxtLink>
+        >Mot de passe oublié ?</NuxtLink>
       </template>
 
       <template #footer>
-        By signing in, you agree to our <NuxtLink
+        En vous connectant, vous acceptez nos <NuxtLink
           to="/"
           class="text-primary font-medium"
-        >Terms of Service</NuxtLink>.
+        >Conditions d'utilisation</NuxtLink>.
       </template>
     </UAuthForm>
   </UCard>

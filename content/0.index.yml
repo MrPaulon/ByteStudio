@@ -1,15 +1,15 @@
-title: Code App
-description: Code App est une application pour créer des applications web de facçon collaborative.
+title: ByteStudio
+description: ByteStudio est une application pour codez des projets de facçon collaborative.
 navigation: false
 hero:
-  title: Créer des applications web de facçon collaborative
-  description: Code App est une application pour créer des applications web de facçon collaborative.
+  title: Codez et collaborez en temps réel
+  description: Créez, collaborez et codez vos projets en Python, JS, C et bien plus encore, avec une plateforme intuitive qui donne vie à vos idées !
   headline:
     label: Made with ❤️ by MrPaulon
     to: https://github.com/MrPaulon
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
-    - label: Démarrer
+    - label: Créer un projet
       to: '/signup'
       size: xl
       color: primary
@@ -19,78 +19,47 @@ hero:
       icon: i-heroicons-book-open
       size: xl
       color: gray
-      to: https://github.com/nuxt-ui-pro/saas
-      target: _blank
+      to: /explore
 sections:
-  - title: The power of our service
-    description: Aliqua labore laboris fugiat. Reprehenderit exercitation eu commodo. Officia nostrud sit et aliqua ea ex sunt minim incididunt sunt.
+  - title: La puissance de ByteStudio
+    description: Ecrire, exécuter et tester des projets en divers langages (Python, JS, C, ReactJS) avec autocomplétion intelligente, débogage en temps réel, et performance optimisée, le tout depuis votre navigateur
     id: features
     align: left
     features:
-      - name: Easy to use
-        description: Id laborum laboris duis nostrud excepteur ut velit.
-        icon: i-heroicons-cog
-      - name: Reliable
-        description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-        icon: i-heroicons-check
-      - name: Secure
-        description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing.
-        icon: i-heroicons-lock-closed
-    links:
-      - label: Explore components
-        to: /pro/components
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-  - title: The speed of our service
-    description: Cillum sint enim excepteur ut deserunt qui nisi in deserunt in. Deserunt aliquip quis aliquip eu quis ex velit velit nostrud sit.
-    align: right
-    features:
-      - name: Fast
-        description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod.
+      - name: Facile à utiliser
+        description: Créer votre projet en seulement quelques clics
+        icon: i-heroicons-beaker
+      - name: Tester
+        description: Exécuter et tester vos projets en temps réel
         icon: i-heroicons-rocket-launch
-      - name: Affordable
-        description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-        icon: i-heroicons-currency-dollar
-      - name: Scalable
-        description: Lorem deserunt et eiusmod. Ea in consectetur minim officia.
-        icon: i-heroicons-chart-bar
-    links:
-      - label: Learn more
-        to: /pro/guide/content
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
+      - name: Sécurisé
+        description: Vos projets sont protégés et privés
+        icon: i-heroicons-lock-closed
 features:
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: Pourquoi choisir ByteStudio ?
+  description: Laisser votre créativité s'exprimer et commencer à coder dès maintenant !
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+    - title: Facile à utiliser
+      description: Créer votre projet en seulement quelques clics
+      icon: i-heroicons-beaker
+    - title: Collaboratif
+      description: Inviter, collaborer et partager vos projets avec vos collègues
+      icon: i-heroicons-users
+    - title: Performant
+      description: Exécuter et tester vos projets en temps réel
       icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
+    - title: Personnalisation
+      description: Personnaliser votre espace de travail à votre guise
+      icon: i-heroicons-paint-brush
+    - title: Versions
+      description: Gérer facilement vos versions avec l'integration Git dans ByteStudio
+      icon: i-heroicons-adjustments-vertical
+    - title: Sécurisé
+      description: Vos projets sont protégés et privés
+      icon: i-heroicons-lock-closed
 testimonials:
-  headline: Testimonials
-  title: What our customers are saying.
-  description: Proident sunt exercitation minim laborum enim laboris labore esse.
+  headline: Nos utilisateurs adorent ByteStudio
+  title: Ce que les utilisateurs disent
   items:
     - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
       author:
@@ -135,10 +104,10 @@ testimonials:
           src: https://i.pravatar.cc/120?img=9
           loading: lazy
 cta:
-  title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Commencer dès maintenant
+  description: Créer votre projet en seulement quelques clics
   links:
-    - label: Buy now
+    - label: Créer un projet
       size: xl
       color: black
       to: /pricing

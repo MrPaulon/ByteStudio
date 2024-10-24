@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: 'sky',
+    primary: 'red',
     gray: 'cool',
     button: {
       rounded: 'rounded-full',

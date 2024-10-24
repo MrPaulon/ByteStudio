@@ -1,36 +1,23 @@
 <script setup lang="ts">
 const links = [{
-  label: 'Resources',
+  label: 'Ressources',
   children: [{
-    label: 'Help center'
+    label: 'Centre d\'aide'
   }, {
     label: 'Docs'
-  }, {
-    label: 'Roadmap'
   }, {
     label: 'Changelog'
   }]
 }, {
-  label: 'Features',
+  label: 'Réseaux',
   children: [{
-    label: 'Affiliates'
+    label: 'Discord'
   }, {
-    label: 'Portal'
+    label: 'Twitter'
   }, {
-    label: 'Jobs'
+    label: 'Linkedin'
   }, {
-    label: 'Sponsors'
-  }]
-}, {
-  label: 'Company',
-  children: [{
-    label: 'About'
-  }, {
-    label: 'Pricing'
-  }, {
-    label: 'Careers'
-  }, {
-    label: 'Blog'
+    label: 'Instagram'
   }]
 }]
 
@@ -44,8 +31,8 @@ function onSubmit() {
 
   setTimeout(() => {
     toast.add({
-      title: 'Subscribed!',
-      description: 'You\'ve been subscribed to our newsletter.'
+      title: 'Abonné !',
+      description: 'Vous êtes abonné à notre newsletter.'
     })
 
     loading.value = false
@@ -60,13 +47,13 @@ function onSubmit() {
         <template #right>
           <form @submit.prevent="onSubmit">
             <UFormGroup
-              label="Subscribe to our newsletter"
+              label="S'abonner à notre newsletter"
               :ui="{ container: 'mt-3' }"
             >
               <UInput
                 v-model="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Entrez votre email"
                 :ui="{ icon: { trailing: { pointer: '' } } }"
                 required
                 size="xl"
@@ -79,7 +66,7 @@ function onSubmit() {
                     type="submit"
                     size="xs"
                     color="primary"
-                    :label="loading ? 'Subscribing' : 'Subscribe'"
+                    :label="loading ? 'S\'abonner' : 'S\'abonner'"
                     :loading="loading"
                   />
                 </template>
@@ -92,7 +79,7 @@ function onSubmit() {
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+        Copyright ByteStudio © {{ new Date().getFullYear() }}. Tous droits réservés.
       </p>
     </template>
 
